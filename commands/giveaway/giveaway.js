@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 const ms = require('ms');
 module.exports = {
     config: {
-        name: "giveaway",
+        name: "gstart",
         description: "Creating giveaway",
         accessableby: "Administrator",
         category: "giveaway",

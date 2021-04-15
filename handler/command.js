@@ -12,5 +12,7 @@ module.exports = (bot) => {
         ["economy", "fun", "image", "info",
         "nsfw",
         
-      "moderation", "music", "owner",].forEach(x => load(x));
+        
+      "moderation",
+      "giveaway","music", "owner",].forEach(x => load(x));
 }; 
