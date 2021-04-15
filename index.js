@@ -6,6 +6,7 @@ const {
 } = require("discord.js");
 const { PREFIX, TOKEN, DBL_API_KEY } = require("./config");
 const bot = new Client({ disableMentions: "everyone" });
+require('dotenv').config();
 const DBL = require("dblapi.js");
 const dbl = new DBL(DBL_API_KEY);
 const fs = require("fs");
@@ -268,4 +269,4 @@ require('http').createServer((req, res) => res.end('Bot is alive!')).listen(3000
 
   console.log("bot staryed ")
 
-bot.login(TOKEN);
+bot.login(process.env.TOKEN);
