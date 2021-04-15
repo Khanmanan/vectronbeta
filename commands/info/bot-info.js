@@ -41,7 +41,7 @@ module.exports = {
       .addField('Server', `\`\`\`asciidoc\n${serverStats}\`\`\``)
       .addField(
         'Links', 
-        '**[Invite Me](http://aerv.ga/)**'
+        '**[Invite Me](https://discord.com/api/oauth2/authorize?client_id=830377195310546954&permissions=4025867761&scope=bot)**'
       )
       .setFooter(message.member.displayName,  message.author.displayAvatarURL({ dynamic: true }))
       .setTimestamp()
