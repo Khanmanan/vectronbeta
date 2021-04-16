@@ -58,7 +58,7 @@ module.exports = {
                     url: `https://www.youtube.com/watch?v=${video.id}`,
                     thumbnail: `https://i.ytimg.com/vi/${video.id}/maxresdefault.jpg`,
                     duration: video.duration,
-                    time: songInfo.length_seconds
+                    time: songInfo.videoDetails.lengthSeconds
                 };
 
                 if (serverQueue) {
@@ -127,8 +127,8 @@ module.exports = {
                     .setTitle('Now Playing\n')
                     .setThumbnail(song.thumbnail)
                     .setTimestamp()
-                    .setDescription(`🎵 Now playing:\n **${song.title}** 🎵\n\n Song Length: **${np}**`)
-                    .setFooter(message.member.displayName, message.author.displayAvatarURL());
+                    .setDescription(`<a:playing:759832076710182923> Now playing: **${song.title}** \n <a:duration:759832664710316054> Song Length: **${np}** `)
+                    .setFooter(`Requested by: ${message.member.displayName}`, message.author.displayAvatarURL());
                 queue.textChannel.send(embed);
             };
     }
